@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRED App</title>
+    <style>
+        /* General Reset and Body Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #2c2c2c;
+            position: sticky;
+            top: 0;
+        }
+        .logo h1 {
+            font-size: 24px;
+            color: #ff3366;
+        }
+        .user-menu ul {
+            display: flex;
+            list-style: none;
+        }
+        .user-menu li {
+            margin-left: 20px;
+        }
+        .user-menu a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            color: #cccccc;
+        }
+
+        /* Card Section */
+        .card-section {
+            margin-bottom: 30px;
+        }
+        .card-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .card h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+        .card span {
+            font-size: 14px;
+            color: #ff3366;
+        }
+        .card button {
+            background-color: #ff3366;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #e62e5c;
+        }
+
+        /* Rewards Section */
+        .rewards {
+            margin-bottom: 30px;
+        }
+        .rewards h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .reward-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+        .reward-item {
+            background-color: #2c2c2c;
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 150px;
+            text-align: center;
+        }
+        .reward-item h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .reward-item p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        /* Transactions Section */
+        .transactions {
+            margin-bottom: 30px;
+        }
+        .transactions h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .transactions ul {
+            list-style: none;
+        }
+        .transactions li {
+            display: flex;
+            justify-content: space-between;
+            background-color: #2c2c2c;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .transactions p {
+            color: #ffffff;
+        }
+        .transactions span {
+            color: #ff3366;
+        }
+        .transactions time {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        /* Footer Navigation */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #2c2c2c;
+            padding: 10px 0;
+        }
+        .bottom-nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .bottom-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .bottom-nav a:hover {
+            color: #ff3366;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>CRED</h1>
+        </div>
+        <nav class="user-menu">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero/Welcome Section -->
+        <section class="hero">
+            <h2>Welcome Back!</h2>
+            <p>Pay your credit card bills and earn rewards</p>
+        </section>
+
+        <!-- Credit Card Section -->
+        <section class="card-section">
+            <h3>Your Cards</h3>
+            <article class="card">
+                <h4>Visa Platinum</h4>
+                <p>Due: $1,250 <span>Due Date: Apr 10</span></p>
+                <button>Pay Now</button>
+            </article>
+            <article class="card">
+                <h4>MasterCard Gold</h4>
+                <p>Due: $450 <span>Due Date: Apr 15</span></p>
+                <button>Pay Now</button>
+            </article>
+        </section>
+
+        <!-- Rewards Section -->
+        <section class="rewards">
+            <h3>Rewards</h3>
+            <div class="reward-list">
+                <article class="reward-item">
+                    <h4>Cashback</h4>
+                    <p>Earn up to 5% on payments</p>
+                </article>
+                <article class="reward-item">
+                    <h4>Exclusive Offers</h4>
+                    <p>Unlock premium deals</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Transactions Section -->
+        <section class="transactions">
+            <h3>Recent Transactions</h3>
+            <ul>
+                <li>
+                    <p>Visa Payment <span>$500</span></p>
+                    <time datetime="2025-03-28">Mar 28, 2025</time>
+                </li>
+                <li>
+                    <p>Reward Redeemed <span>$10 Cashback</span></p>
+                    <time datetime="2025-03-25">Mar 25, 2025</time>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
